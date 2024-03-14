@@ -1,4 +1,4 @@
-module Hanzi where
+module Hanzi
 
 include("data.jl")
 

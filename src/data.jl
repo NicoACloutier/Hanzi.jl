@@ -2,7 +2,7 @@
 const DATA_PATH::String = "../pinyin-data/pinyin.txt"
 
 """
-Change a unicode string in the format U+$(code): into a character.
+Change a unicode string in the format U+`code`: into a character.
 Arguments:
     `unicode::String`: The unicode representation string.
 Returns:
@@ -37,7 +37,7 @@ end
 """
 Create data pairs out of a line in the data file.
 Arguments:
-    `line::String`: The line in the data file in the format U+$(code): $(pinyin) # $(hanzi)
+    `line::String`: The line in the data file in the format U+`code`: `pinyin` # `hanzi`
 Returns:
     `::Tuple{String, Vector{String}}`: A tuple with Hanzi as the first item and a vector of pinyin as the second.
 """
