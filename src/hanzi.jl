@@ -1,5 +1,5 @@
 module Hanzi
 
-include("data.jl")
+include("convert.jl")
 
 end
