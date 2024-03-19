@@ -29,7 +29,7 @@ Create dictionary mapping Hanzi to pinyin out of a data file.
 Arguments:
     `path::String`: The path to the file with data.
 Returns:
-    `::Dict{String, String}`: A dictionary mapping Hanzi to pinyin.
+    `::Dict{String, Vector{String}}`: A dictionary mapping Hanzi to all pinyin representations.
 """
 function create_dict(path::String)::Dict{String, Vector{String}}
     contents::Vector{Tuple{String, Vector{String}}} = map(make_pairs, readlines(path)[3:end]) # splice to remove first two lines, unused
