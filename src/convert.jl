@@ -13,7 +13,12 @@ const WADEGILES_ONSET::Dict{Regex, String} = Dict(Regex(pair[1] * "(?=[" * join(
     "ch" => "ch'", "zh" => "ch", "q" => "ch'", "j" => "ch", "x" => "hs", "r" => "j"])
 "Pinyin to Wade-Giles coda/nucleus conversion dictionary."
 const WADEGILES_CODA::Dict{Regex, String} = map(x -> Regex(x[1] * "(?=[\\b1-9])") => x[2], 
-    ["i" => "ih", "ie" => "ieh", "ian" => "ien", "ong" => "ung", "üe" => "üeh"]) |> Dict
+    ["ie" => "ieh", "ian" => "ien", "ong" => "ung", "üe" => "üeh",
+     "ye" => "yeh", "yu" => "yü", "yun" => "yün", "yuan" => "yüan",
+     "yan" => "yen", "you" => "yu", "chi" => "chih", "ch'i" => "ch'ih",
+     "shi" => "shih", "ji" => "jih", "tzi" => "tzŭ", "tz'i" => "tz'ŭ",
+     "si" => "sŭ", "wen" => "wên", "eng" => "êng", "e" => "ê", 
+     "er" => "êrh"]) |> Dict
 
 """
 Returns the first item of a vector if `multiple` is false, otherwise the vector.
