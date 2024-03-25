@@ -1,5 +1,5 @@
 "Relative path to data directory."
-const DATA_PATH::String = "./pinyin-data/pinyin.txt"
+const DATA_PATH = "./pinyin-data/pinyin.txt"
 
 """
 Change a unicode string in the format U+`code`: into a character.

@@ -1,18 +1,18 @@
 include("data.jl")
 
 "The number of unique vowel qualities for retranscription."
-const NUM_VOWELS::Int = 6
+const NUM_VOWELS = 6
 "The number of tones to be used for retranscription."
-const NUM_TONES::Int = 4
+const NUM_TONES = 4
 "A vector of vowels used in pinyin, ordered according to tone."
-const VOWELS::Vector{String} = ["ā", "ē", "ī", "ō", "ū", "ǖ", "á", "é", "í", "ó", "ú", "ǘ",
-    "ǎ","ě", "ǐ", "ǒ", "ǔ", "ǚ", "à", "è", "ì", "ò", "ù", "ǜ", "a", "e", "i", "o", "u", "ü"]
+const VOWELS = ["ā", "ē", "ī", "ō", "ū", "ǖ", "á", "é", "í", "ó", "ú", "ǘ", "ǎ","ě",
+    "ǐ", "ǒ", "ǔ", "ǚ", "à", "è", "ì", "ò", "ù", "ǜ", "a", "e", "i", "o", "u", "ü"]
 "Pinyin to Wade-Giles onset conversion dictionary."
-const WADEGILES_ONSET::Dict{Regex, String} = Dict(Regex(pair[1] * "(?=[" * join(VOWELS, "") * "])") => pair[2] for pair in
+const WADEGILES_ONSET = Dict(Regex(pair[1] * "(?=[" * join(VOWELS, "") * "])") => pair[2] for pair in
     ["p" => "p'", "b" => "p", "t" => "t'", "d" => "t", "k" => "k'", "g" => "k", 
     "ch" => "ch'", "zh" => "ch", "q" => "ch'", "j" => "ch", "x" => "hs", "r" => "j"])
 "Pinyin to Wade-Giles coda/nucleus conversion dictionary."
-const WADEGILES_CODA::Dict{Regex, String} = map(x -> Regex(x[1] * "(?=[\\b1-9])") => x[2], 
+const WADEGILES_CODA = map(x -> Regex(x[1] * "(?=[\\b1-9])") => x[2], 
     ["ie" => "ieh", "ian" => "ien", "ong" => "ung", "üe" => "üeh",
      "ye" => "yeh", "yu" => "yü", "yun" => "yün", "yuan" => "yüan",
      "yan" => "yen", "you" => "yu", "chi" => "chih", "ch'i" => "ch'ih",
