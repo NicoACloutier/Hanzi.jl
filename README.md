@@ -15,25 +15,25 @@ This library requires a minimum of Julia 1.0 and does not depend on any external
 ### Usage examples
 
 ```julia
-using Hanzi
+using HanziRomanization
 
-Hanzi.pinyin("㐀") # [["qiū"]]
-Hanzi.pinyin("㐀", multiple=true) # [["qiū"]]
-Hanzi.pinyin("是") # [["shì"]]
-Hanzi.pinyin("是", multiple=true) # [["shì", "tí"]]
-Hanzi.pinyin("你好") # [["nǐ"], ["hǎo"]]
-Hanzi.pinyin("你好", multiple=true) # [["nǐ"], ["hǎo", "hào"]]
-Hanzi.pinyin("我叫John。你呢？") # [["wǒ"], ["jiào"], ["John。"], ["nǐ"], ["ne"], ["？"]]
-Hanzi.pinyin("我叫John。你呢？", multiple=true) # [["wǒ"], ["jiào"], ["John。"], ["nǐ"], ["ne", "ní", "nǐ", "nī"], ["？"]]
+HanziRomanization.pinyin("㐀") # [["qiū"]]
+HanziRomanization.pinyin("㐀", multiple=true) # [["qiū"]]
+HanziRomanization.pinyin("是") # [["shì"]]
+HanziRomanization.pinyin("是", multiple=true) # [["shì", "tí"]]
+HanziRomanization.pinyin("你好") # [["nǐ"], ["hǎo"]]
+HanziRomanization.pinyin("你好", multiple=true) # [["nǐ"], ["hǎo", "hào"]]
+HanziRomanization.pinyin("我叫John。你呢？") # [["wǒ"], ["jiào"], ["John。"], ["nǐ"], ["ne"], ["？"]]
+HanziRomanization.pinyin("我叫John。你呢？", multiple=true) # [["wǒ"], ["jiào"], ["John。"], ["nǐ"], ["ne", "ní", "nǐ", "nī"], ["？"]]
 
-Hanzi.wadegiles("㐀") # [["ch'iu1"]]
-Hanzi.wadegiles("㐀", multiple=true) # [["ch'iu1"]]
-Hanzi.wadegiles("是") # [["shih4"]]
-Hanzi.wadegiles("是", multiple=true) # [["shih4", "t'i2"]]
-Hanzi.wadegiles("你好") # [["ni3"], ["hao3"]]
-Hanzi.wadegiles("你好", multiple=true) # [["ni3"], ["hao3", "hao4"]]
-Hanzi.wadegiles("我叫John。你呢？") # [["wo3"], ["chiao4"], ["John。"], ["ni3"], ["ne"], ["？"]]
-Hanzi.wadegiles("我叫John。你呢？", multiple=true) # [["wo3"], ["chiao4"], ["John。"], ["ni3"], ["ne", "ni2", "ni3", "ni1"], ["？"]]
+HanziRomanization.wadegiles("㐀") # [["ch'iu1"]]
+HanziRomanization.wadegiles("㐀", multiple=true) # [["ch'iu1"]]
+HanziRomanization.wadegiles("是") # [["shih4"]]
+HanziRomanization.wadegiles("是", multiple=true) # [["shih4", "t'i2"]]
+HanziRomanization.wadegiles("你好") # [["ni3"], ["hao3"]]
+HanziRomanization.wadegiles("你好", multiple=true) # [["ni3"], ["hao3", "hao4"]]
+HanziRomanization.wadegiles("我叫John。你呢？") # [["wo3"], ["chiao4"], ["John。"], ["ni3"], ["ne"], ["？"]]
+HanziRomanization.wadegiles("我叫John。你呢？", multiple=true) # [["wo3"], ["chiao4"], ["John。"], ["ni3"], ["ne", "ni2", "ni3", "ni1"], ["？"]]
 ```
 
 ## Special thanks
