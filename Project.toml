@@ -1,7 +1,7 @@
 name = "Hanzi"
 uuid = "485a87e4-fb71-42ca-b614-bc87b1bb3702"
 authors = ["Nicolas Cloutier <nicocloutier1@gmai.com>"]
-version = "1.8.0-DEV"
+version = "1.0.0"
 
 [deps]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
