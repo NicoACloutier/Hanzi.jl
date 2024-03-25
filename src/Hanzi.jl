@@ -1,4 +1,4 @@
-module HanziRomanization
+module Hanzi
 export wadegiles, pinyin
 
 include("convert.jl")

@@ -1,4 +1,4 @@
-name = "HanziRomanization"
+name = "Hanzi"
 uuid = "485a87e4-fb71-42ca-b614-bc87b1bb3702"
 authors = ["Nicolas Cloutier <nicocloutier1@gmai.com>"]
 version = "1.0.0"
